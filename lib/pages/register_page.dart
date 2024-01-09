@@ -97,6 +97,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 50,
                     ),
                     //Welcome back message
+                    //message de re-bienvenu 
                     Text(
                       "Lets create an account for you",
                       style: TextStyle(
@@ -108,6 +109,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 25,
                     ),
                     //email textfield
+                    //cree un adresse mail 
                     MyTextField(
                       controller: emailTextController,
                       hintText: 'Email',
@@ -117,6 +119,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 10,
                     ),
                     //password textfield
+                    //cree mot de passe
                     MyTextField(
                       controller: passwordTextController,
                       hintText: 'Password',
@@ -125,7 +128,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     const SizedBox(
                       height: 10,
                     ),
-                    //confirm your password textfield
+                    //confirm votre mot de passe textfield
                     MyTextField(
                       controller: confirmpasswordController,
                       hintText: 'Confirm Password',
@@ -135,17 +138,17 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 25,
                     ),
 
-                    //sign up buttom
+                    //creatin  d'un comptre buttom
                     MyButton(onTap: siginUp, text: 'Sign Up'),
                     const SizedBox(
                       height: 25,
                     ),
-                    // go to register page
+                    // aller faire s'inscription page
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Already have an account!",
+                          " Vous avez un compte !",
                           style: TextStyle(
                             color: Colors.grey[700],
                           ),
