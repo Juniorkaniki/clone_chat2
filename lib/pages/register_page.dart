@@ -21,7 +21,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   //sign user up
   void siginUp() async {
-    //show loading circle
+    //montre le cercle
     showDialog(
       context: context,
       builder: (context) => const Center(
@@ -38,12 +38,13 @@ class _RegisterPageState extends State<RegisterPage> {
     }
     //try creating the user
     try {
-      //create the user
+      //cree un utilisateur
       UserCredential userCredential = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(
               email: emailTextController.text,
               password: passwordTextController.text);
       // after creating the user, create a new document in cloud firestore called Users
+      // cree un documents dans le cloud fire appele
       FirebaseFirestore.instance
           .collection("Users")
           .doc(userCredential.user!.email!)
